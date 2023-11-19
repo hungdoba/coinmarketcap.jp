@@ -76,8 +76,6 @@ const ExchangeVolumeDialog: React.FC<Props> = ({
 
   const exchangeVolumeChart = useAppSelector(selectExchangeVolumeChart);
 
-  console.log(exchangeVolumeChart);
-
   const formatRawData = () => {
     const chartData: DataFormat[] = [];
     exchangeVolumeChart.value.forEach((dataPair: [number, string]) => {

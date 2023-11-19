@@ -88,7 +88,6 @@ export const coinListSlice: Slice<CoinListState, Reducers, 'coinList'> =
         action: PayloadAction<CoinQueryParams>
       ) => {
         state.coinQueryParams = action.payload;
-        console.log(state.coinQueryParams);
       },
       addCoinListTableColumn: (
         state: CoinListState,
@@ -120,8 +119,6 @@ export const coinListSlice: Slice<CoinListState, Reducers, 'coinList'> =
           state.status = action.meta.arg.append ? 'LOADING MORE' : 'LOADING';
         })
         .addCase(fetchCoinList.fulfilled, (state, action) => {
-          console.log(action.payload);
-
           state.status = 'IDLE';
           if (action.payload.data && Array.isArray(action.payload.data)) {
             state.value = action.payload.append

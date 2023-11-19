@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Theme, useTheme } from '@mui/material/styles';
 import { makeStyles } from '@mui/styles';
 import {
@@ -22,12 +22,7 @@ import CoinListTableHeader, { headCells } from '../atoms/CoinListTableHeader';
 import CoinNameCell from '../atoms/CoinNameCell';
 import CirculatingSupplyCell from '../atoms/CirculatingSupplyCell';
 import CoinSparkline from '../atoms/CoinSparkline';
-import {
-  Coin,
-  CoinQueryParams,
-  CoinSortingKey,
-  Status,
-} from '../../../../models';
+import { Coin, CoinQueryParams, CoinSortingKey } from '../../../../models';
 import { formatNumber, roundDecimals } from '../../../../common/helpers';
 import { useInfiniteScrollingObserver } from '../../../../common/hooks/useInfiniteScrollingObserver';
 import { useScrollToTop } from '../../../../common/hooks/useScrollToTop';
@@ -116,10 +111,6 @@ const CoinListTable: React.FC = () => {
   };
 
   const { FloatingButton, target, top } = useScrollToTop();
-
-  useEffect(() => {
-    console.log(coinList);
-  }, [coinList]);
 
   return (
     <div className={classes.root}>

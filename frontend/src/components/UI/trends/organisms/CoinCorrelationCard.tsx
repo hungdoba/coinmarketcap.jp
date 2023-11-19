@@ -29,9 +29,6 @@ const CoinCorrelationCard: React.FC = () => {
   const coins = useAppSelector(selectCoins);
   const coinMarketChartList = useAppSelector(selectCoinMarketChartList);
 
-  console.log(coins, 'b');
-  console.log(coinMarketChartList, 'a');
-
   const top15: Coin[] = coins.value.slice(0, 15);
 
   useEffect(() => {

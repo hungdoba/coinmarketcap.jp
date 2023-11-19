@@ -67,9 +67,6 @@ const CoinDetailsHeader: React.FC = () => {
   const theme = useTheme();
 
   const coinDetails = useAppSelector(selectCoinDetails);
-
-  console.log(coinDetails);
-
   const calculateProgress = (current: number, low: number, high: number) => {
     if (current <= low) return 0;
     if (current >= high) return 100;

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d3b75abc.css",
-    "main.js": "/static/js/main.dff55dbe.js",
+    "main.js": "/static/js/main.6fb89e3f.js",
     "static/media/Gilroy-ExtraBold.woff": "/static/media/Gilroy-ExtraBold.f39ff81c45c126012265.woff",
     "index.html": "/index.html",
     "static/media/mining-icon.svg": "/static/media/mining-icon.523d8900af97837c3911c6092585b7b2.svg",
     "main.d3b75abc.css.map": "/static/css/main.d3b75abc.css.map",
-    "main.dff55dbe.js.map": "/static/js/main.dff55dbe.js.map"
+    "main.6fb89e3f.js.map": "/static/js/main.6fb89e3f.js.map"
   },
   "entrypoints": [
     "static/css/main.d3b75abc.css",
-    "static/js/main.dff55dbe.js"
+    "static/js/main.6fb89e3f.js"
   ]
 }
